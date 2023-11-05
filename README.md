@@ -16,7 +16,7 @@ Avant l’avènement de l’IaC, la gestion de l’infrastructure était génér
 
 7. Ces outils permettent aux organisations de définir, déployer et gérer leur infrastructure de manière efficace et cohérente, facilitant ainsi leur adaptation aux besoins dynamiques des applications et services modernes.
 
-###Pourquoi Terraform ?
+#Pourquoi Terraform ?
 Il existe plusieurs raisons pour lesquelles Terraform est utilisé par rapport aux autres outils IaC, mais voici les principales raisons.
 
 - Prise en charge multi-cloud : Terraform est connu pour sa prise en charge multi-cloud. Il vous permet de définir une infrastructure indépendante du cloud, ce qui signifie que vous pouvez utiliser le même code de configuration pour provisionner des ressources sur différents fournisseurs de cloud (AWS, Azure, Google Cloud, etc.) et même une infrastructure sur site. Cette flexibilité peut être bénéfique si votre organisation utilise plusieurs fournisseurs de cloud ou envisage de migrer entre eux.
