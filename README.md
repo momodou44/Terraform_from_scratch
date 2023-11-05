@@ -1,38 +1,36 @@
 # Terraform_from_scratch
-# Infrastructure as Code(IaC)
 
-Before the advent of IaC, infrastructure management was typically a manual and time-consuming process. System administrators and operations teams had to:
+Avant l’avènement de l’IaC, la gestion de l’infrastructure était généralement un processus manuel et chronophage. Les administrateurs système et les équipes opérationnelles devaient :
 
-1. Manually Configure Servers: Servers and other infrastructure components were often set up and configured manually, which could lead to inconsistencies and errors.
+1. **Configurer manuellement les serveurs : les serveurs et autres composants d'infrastructure étaient souvent installés et configurés manuellement, ce qui pouvait entraîner des incohérences et des erreurs.
 
-2. Lack of Version Control: Infrastructure configurations were not typically version-controlled, making it difficult to track changes or revert to previous states.
+2. **Absence de contrôle de version : les configurations d'infrastructure n'étaient généralement pas contrôlées par version, ce qui rendait difficile le suivi des modifications ou le retour aux états précédents.
 
-3. Documentation Heavy: Organizations relied heavily on documentation to record the steps and configurations required for different infrastructure setups. This documentation could become outdated quickly.
+3. **Documentation lourde : les organisations s'appuient fortement sur la documentation pour enregistrer les étapes et les configurations requises pour les différentes configurations d'infrastructure. Cette documentation pourrait devenir rapidement obsolète.
 
-4. Limited Automation: Automation was limited to basic scripting, often lacking the robustness and flexibility offered by modern IaC tools.
+4. **Automatisation limitée : l'automatisation se limitait aux scripts de base, manquant souvent de la robustesse et de la flexibilité offertes par les outils IaC modernes.
 
-5. Slow Provisioning: Provisioning new resources or environments was a time-consuming process that involved multiple manual steps, leading to delays in project delivery.
+5. **Provisionnement lent : le provisionnement de nouvelles ressources ou environnements était un processus long qui impliquait plusieurs étapes manuelles, entraînant des retards dans la livraison du projet.
 
-IaC addresses these challenges by providing a systematic, automated, and code-driven approach to infrastructure management. Popular IaC tools include Terraform, AWS CloudFormation, Azure Resource Manager templates others. 
+6. **IaC relève ces défis en proposant une approche systématique, automatisée et basée sur le code de la gestion de l'infrastructure. Les outils IaC populaires incluent Terraform, AWS CloudFormation, les modèles Azure Resource Manager et autres.
 
-These tools enable organizations to define, deploy, and manage their infrastructure efficiently and consistently, making it easier to adapt to the dynamic needs of modern applications and services.
+7. **Ces outils permettent aux organisations de définir, déployer et gérer leur infrastructure de manière efficace et cohérente, facilitant ainsi leur adaptation aux besoins dynamiques des applications et services modernes.
 
-# Why Terraform ?
+***Pourquoi Terraform ?
+Il existe plusieurs raisons pour lesquelles Terraform est utilisé par rapport aux autres outils IaC, mais voici les principales raisons.
 
-There are multiple reasons why Terraform is used over the other IaC tools but below are the main reasons.
+**Prise en charge multi-cloud : Terraform est connu pour sa prise en charge multi-cloud. Il vous permet de définir une infrastructure indépendante du cloud, ce qui signifie que vous pouvez utiliser le même code de configuration pour provisionner des ressources sur différents fournisseurs de cloud (AWS, Azure, Google Cloud, etc.) et même une infrastructure sur site. Cette flexibilité peut être bénéfique si votre organisation utilise plusieurs fournisseurs de cloud ou envisage de migrer entre eux.
 
-1. **Multi-Cloud Support**: Terraform is known for its multi-cloud support. It allows you to define infrastructure in a cloud-agnostic way, meaning you can use the same configuration code to provision resources on various cloud providers (AWS, Azure, Google Cloud, etc.) and even on-premises infrastructure. This flexibility can be beneficial if your organization uses multiple cloud providers or plans to migrate between them.
+**Grand écosystème : Terraform dispose d'un vaste écosystème de fournisseurs et de modules apportés à la fois par HashiCorp (la société derrière Terraform) et par la communauté. Cela signifie que vous pouvez trouver des modules et des configurations prédéfinis pour une large gamme de services et de composants d'infrastructure, ce qui vous permet d'économiser du temps et des efforts dans l'écriture de configurations personnalisées.
 
-2. **Large Ecosystem**: Terraform has a vast ecosystem of providers and modules contributed by both HashiCorp (the company behind Terraform) and the community. This means you can find pre-built modules and configurations for a wide range of services and infrastructure components, saving you time and effort in writing custom configurations.
+**Syntaxe déclarative : Terraform utilise une syntaxe déclarative, vous permettant de spécifier l'état final souhaité de votre infrastructure. Cela facilite la compréhension et la maintenance de votre code par rapport aux langages de script impératifs.
 
-3. **Declarative Syntax**: Terraform uses a declarative syntax, allowing you to specify the desired end-state of your infrastructure. This makes it easier to understand and maintain your code compared to imperative scripting languages.
+**Gestion de l'état : Terraform maintient un fichier d'état qui suit l'état actuel de votre infrastructure. Ce fichier d'état aide Terraform à comprendre les différences entre les états souhaités et réels de votre infrastructure, lui permettant ainsi de prendre des décisions éclairées lorsque vous appliquez des modifications.
 
-4. **State Management**: Terraform maintains a state file that tracks the current state of your infrastructure. This state file helps Terraform understand the differences between the desired and actual states of your infrastructure, enabling it to make informed decisions when you apply changes.
+**Planifier et appliquer : le workflow « planifier » et « appliquer » de Terraform vous permet de prévisualiser les modifications avant de les appliquer. Cela permet d'éviter des modifications inattendues de votre infrastructure et offre la possibilité d'examiner et d'approuver les modifications avant leur mise en œuvre.
 
-5. **Plan and Apply**: Terraform's "plan" and "apply" workflow allows you to preview changes before applying them. This helps prevent unexpected modifications to your infrastructure and provides an opportunity to review and approve changes before they are implemented.
+**Support communautaire : Terraform dispose d'une communauté d'utilisateurs vaste et active, ce qui signifie que vous pouvez trouver des réponses aux questions courantes, des conseils de dépannage et une multitude de documentation et de didacticiels en ligne.
 
-6. **Community Support**: Terraform has a large and active user community, which means you can find answers to common questions, troubleshooting tips, and a wealth of documentation and tutorials online.
+**Intégration avec d'autres outils : Terraform peut être intégré à d'autres outils DevOps et d'automatisation, tels que Docker, Kubernetes, Ansible et Jenkins, vous permettant de créer des pipelines d'automatisation complets.
 
-7. **Integration with Other Tools**: Terraform can be integrated with other DevOps and automation tools, such as Docker, Kubernetes, Ansible, and Jenkins, allowing you to create comprehensive automation pipelines.
-
-8. **HCL Language**: Terraform uses HashiCorp Configuration Language (HCL), which is designed specifically for defining infrastructure. It's human-readable and expressive, making it easier for both developers and operators to work with.
+**Langage HCL : Terraform utilise le langage de configuration HashiCorp (HCL), spécialement conçu pour définir l'infrastructure. Il est lisible par l'homme et expressif, ce qui facilite le travail des développeurs et des opérateurs.
